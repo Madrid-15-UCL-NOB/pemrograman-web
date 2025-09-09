@@ -1,0 +1,196 @@
+<html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Saya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+ 
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #1e293b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      padding: 6rem 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+      border-left: 4px solid #38bdf8;
+      padding-left: 1rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #1e293b;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h4 {
+      margin-bottom: 0.5rem;
+      color: #facc15;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e293b;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portofolio</h1>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Perkenalkan Saya Muhammad Alfian Wirayudha</h2>
+    <p>Saya Mahasiswa Universitas Negeri Makassar Prodi Teknik Komputer Angkatan 24</p>
+    <img src="foto.jpg" alt="Gambar saya" width="400" height="400">
+  </section>
+
+  <section id="about">
+    <h3>Tentang Saya</h3>
+    <p>Saya adalah Mahasiswa Teknik Komputer angkatan 24, saya anak ke2 dari 2 bersaudara saya biasanya di panggil alfian/pian dan saya menyukai naik gunung ada 
+       beberapa gunung di sulawesi yang sudah saya capai puncaknya, Selain itu, saya juga senang bermain futal, dan
+       Bulutangkis, Untuk sekarang saya memiliki minat yang cukup besar terhadap dunia teknologi dan komputer,saya 
+      harap saya bisa mengembangkan diri saya di bidang komputer terutama di programmer.</p>
+  </section>
+
+  <section id="projects">
+    <h3>Data diri Dan Harapan saya</h3>
+    <div class="projects">
+      <div class="project-card">
+        <h4>Blog Pribadi</h4>
+        <p><li><b>Tempat, Tanggal Lahir:</b> Pangkep, 16 July 2004</li>
+        <li><b>Alamat:</b> Jl.KH. Muh.Yusuf No. 123, Pangkep</li>
+        <li><b>Hobi:</b> Futsal,Bulutangkis,Hiking</li></p>
+        
+      </div>
+      <div class="project-card">
+        <h4>Harapan Saya</h4>
+        <p>Harapan saya di prodi Teknik Komputer adalah bisa memahami teknologi dari dasar, mengembangkan skill pemrograman, dan siap bersaing di dunia kerja..</p>
+      </div>
+      <div class="project-card">
+
+        <h4>Sosial Media Saya</h4>
+       <div class="sosmed">
+       <p><li><b><a href="https://www.instagram.com/alfian_wry" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+             alt="Instagram" width="20"> 
+        <span>@alfian_wry</span></b>
+      
+        <p><li><b><a href="https://www.tiktok.com/@Alfian.Wirayudha" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" 
+             alt="TikTok" width="20">
+        <span>@alfian.wirayudha</span></b>
+
+        <p><li><b><a href="https://github.com/Muhammad Alfian Wiarayudha" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" 
+             alt="GitHub" width="20">
+        <span>@Muhammad Alfian Wiarayudha</span></b>
+    </a>
+</div>
+    </a>
+
+    </a>
+</div>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    &copy; 2025 - Di buat oleh Alfian Ganteng
+  </footer>
+
+</body>
+</html>

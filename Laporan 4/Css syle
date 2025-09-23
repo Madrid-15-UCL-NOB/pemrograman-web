@@ -1,0 +1,165 @@
+/* Reset & font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #1e293b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+nav a {
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero section */
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+.hero img {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Section umum */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+  border-left: 4px solid #38bdf8;
+  padding-left: 1rem;
+}
+
+/* Project cards */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h4 {
+  margin-bottom: 0.5rem;
+  color: #facc15;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+/* Sosial media list */
+.sosmed li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.sosmed a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #38bdf8;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.sosmed a:hover {
+  transform: scale(1.05);
+}
+
+/* Galeri */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.galeri img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeri img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1e293b;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}

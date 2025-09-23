@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hitungan Bangun Ruang</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 1.1em;
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    .result {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hitungan Bangun Ruang</h2>
+  <button onclick="hitungBangunRuang()">Hitung Bangun Ruang</button>
+
+  <div id="output" class="result"></div>
+
+  <script>
+    function hitungBangunRuang() {
+      const output = document.getElementById('output');
+
+     
+      const sisiKubus = 5;
+      const volumeKubus = sisiKubus ** 3;
+
+      
+      const panjangBalok = 10;
+      const lebarBalok = 6;
+      const tinggiBalok = 4;
+      const volumeBalok = panjangBalok * lebarBalok * tinggiBalok;
+
+      
+      const jariTabung = 7;
+      const tinggiTabung = 10;
+      const volumeTabung = Math.PI * (jariTabung ** 2) * tinggiTabung;
+
+      output.innerHTML = `
+        <strong>Volume Kubus</strong> (sisi 5 cm): ${volumeKubus} cm³<br/>
+        <strong>Volume Balok</strong> (10 × 6 × 4 cm): ${volumeBalok} cm³<br/>
+        <strong>Volume Tabung</strong> (r = 7 cm, t = 10 cm): ${volumeTabung.toFixed(2)} cm³
+      `;
+    }
+  </script>
+
+</body>
+</html>

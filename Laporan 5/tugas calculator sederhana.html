@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculator Sederhana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 300px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+    input[type="text"] {
+      width: 100%;
+      font-size: 1.2em;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      text-align: right;
+    }
+    button {
+      width: 22%;
+      font-size: 1.2em;
+      margin: 1%;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Calculator Sederhana</h2>
+  <input type="text" id="display" readonly />
+
+  <br />
+
+  <button onclick="appendNumber('7')">7</button>
+  <button onclick="appendNumber('8')">8</button>
+  <button onclick="appendNumber('9')">9</button>
+  <button onclick="appendOperator('/')">÷</button>
+
+  <button onclick="appendNumber('4')">4</button>
+  <button onclick="appendNumber('5')">5</button>
+  <button onclick="appendNumber('6')">6</button>
+  <button onclick="appendOperator('*')">×</button>
+
+  <button onclick="appendNumber('1')">1</button>
+  <button onclick="appendNumber('2')">2</button>
+  <button onclick="appendNumber('3')">3</button>
+  <button onclick="appendOperator('-')">−</button>
+
+  <button onclick="appendNumber('0')">0</button>
+  <button onclick="appendNumber('.')">.</button>
+  <button onclick="calculateResult()">=</button>
+  <button onclick="appendOperator('+')">+</button>
+
+  <br />
+  <button style="width: 96%" onclick="clearDisplay()">Clear</button>
+
+  <script>
+    const display = document.getElementById('display');
+
+    function appendNumber(number) {
+      // Jika display berisi '0', ganti dengan number, bukan append
+      if(display.value === "0") {
+        display.value = number;
+      } else {
+        display.value += number;
+      }
+    }
+
+    function appendOperator(operator) {
+      const lastChar = display.value.slice(-1);
+      // Cegah operator berturut-turut
+      if (display.value !== "" && !"+-*/.".includes(lastChar)) {
+        display.value += operator;
+      }
+    }
+
+    function calculateResult() {
+      try {
+        // Evaluasi string di display
+        const result = eval(display.value);
+        display.value = result;
+      } catch (e) {
+        display.value = "Error";
+      }
+    }
+
+    function clearDisplay() {
+      display.value = "";
+    }
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<html>
+<html>
+<head>
+    <title>Tugas Mandiri HTML</title>
+</head>
+<body>
+    <h2>Form Data Mahasiswa</h2>
+
+    <!-- Radio Button -->
+    <p><b>Jenis Kelamin:</b></p>
+    <input type="radio" name="gender" value="Laki-laki"> Laki-laki <br>
+    <input type="radio" name="gender" value="Perempuan"> Perempuan <br><br>
+
+    <!-- Drop Down -->
+    <p><b>Pilih Program Studi:</b></p>
+    <select name="prodi">
+        <option value="TI">Teknik Informatika</option>
+        <option value="SI">Sistem Informasi</option>
+        <option value="TK">Teknik Komputer</option>
+    </select><br><br>
+
+    <!-- Text Area -->
+    <p><b>Alamat:</b></p>
+    <textarea name="alamat" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Simpan">
+    <input type="reset" value="Reset">
+
+    <hr>
+
+    <h2>Contoh Frame</h2>
+    <p><b>Frame Horizontal:</b></p>
+    <!-- Frame Horizontal -->
+    <iframe src="halaman1.html" width="45%" height="200"></iframe>
+    <iframe src="halaman2.html" width="45%" height="200"></iframe>
+
+    <p><b>Frame Vertikal:</b></p>
+    <!-- Frame Vertikal -->
+    <iframe src="halaman1.html" width="100%" height="100"></iframe><br>
+    <iframe src="halaman2.html" width="100%" height="100"></iframe>
+
+    <p><b>Frame Gabungan H-V:</b></p>
+    <!-- Frame Gabungan -->
+    <table border="1" width="100%" height="250">
+        <tr height="30%">
+            <td colspan="2"><iframe src="header.html" width="100%" height="100"></iframe></td>
+        </tr>
+        <tr height="70%">
+            <td width="50%"><iframe src="menu.html" width="100%" height="100%"></iframe></td>
+            <td width="50%"><iframe src="konten.html" width="100%" height="100%"></iframe></td>
+        </tr>
+    </table>
+
+</body>
+</html>

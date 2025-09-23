@@ -1,0 +1,114 @@
+<!DOCTYPE html> = adalah elemen root (akar) dari dokumen HTML.
+<html lang="id"> = memberitahu browser dan alat bantu bahwa konten di dalam dokumen ini menggunakan Bahasa Indonesia.
+
+<head>
+  <meta charset="UTF-8"> = Mengatur encoding karakter (huruf, angka, simbol) agar tampil dengan benar.
+  <meta name="viewport" content="width=device-width, initial-scale=1"> =Supaya halaman responsif di perangkat mobile.
+
+  <title>Portfolio Saya</title> = Akan tampil di tab browser.
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> =Mengimpor font Inter dari Google Fonts.
+
+* {
+  margin: 0; =  Menghapus margin/padding default browser.
+  padding: 0;
+  box-sizing: border-box; =  membuat layout lebih stabil.
+  font-family: 'Inter', sans-serif;
+}
+
+body {  
+  background-color: #0f172a; = Background gelap (dark theme).
+  color: #f1f5f9; = Warna teks terang untuk kontras.
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none; = Link tidak bergaris bawah, dan warna ikut elemen induknya.
+  color: inherit;
+}
+
+header {
+  background-color: #1e293b; = Memberi warna latar belakang ke elemen header yaitu warna biru tua gelap 
+  padding: 1rem 2rem; = Memberi jarak ke dalam (padding):1rem atas & bawah,2rem kiri & kanan,1rem = ukuran font default (biasanya 16px)
+  display: flex; = aktifkan sistem flexbox.
+  justify-content: space-between; = elemen anak disusun ke sisi kiri dan kanan (misalnya logo kiri, menu kanan).
+  align-items: center; = menyelaraskan secara vertikal ke tengah.
+  position: sticky; = akan tetap di posisi atas saat scroll sampai bagian tertentu.
+  top: 0; = menempelnya tepat di paling atas.
+  z-index: 10; = Menentukan tingkatan lapisan (layer),Nilai 10 memastikan header tampil di atas elemen lain (tidak tertimpa).
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); = warna hitam transparan 20%
+}
+
+.hero {
+  padding: 6rem 2rem;  = membuat bagian hero terlihat luas dan lapang secara vertikal,memberi jarak tepi horizontal, agar konten tidak menempel di sisi layar.
+  text-align: center;  = Menjadikan semua teks dalam .hero menjadi rata tengah
+  background: linear-gradient(to right, #0f172a, #1e293b); = Memberikan warna gelap di kiri dan di kanan warna biru gelap 
+}
+ 
+section {
+  padding: 4rem 2rem;  = Memberi jarak ke dalam dari konten di dalam
+  max-width: 1000px; = Membatasi lebar maksimum dari <section> menjadi 1000 piksel.
+Jika layar lebih lebar dari 1000px, section tidak akan melebar lebih dari itu.
+Tapi jika layar lebih kecil (misalnya di HP), maka <section> bisa lebih kecil agar tetap responsif.
+  margin: 0 auto; = Ini digunakan untuk menengahkan elemen secara horizontal di halaman.
+}
+
+.projects { 
+  display: grid; = Ini memberitahu browser bahwa elemen dengan class .projects akan menggunakan CSS Grid Layout
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); = membuat kolom grid berulang,membuat jumlah kolom menyesuaikan ukuran layar (otomatis muat sebanyak mungkin kolom).
+  gap: 2rem; = Memberi jarak antar item grid sebesar 2rem (biasanya 32px jika root font size-nya 16px).
+}
+
+.project-card {
+  background-color: #1e293b; = Warna latar belakang dari kartu warna yang di pakai adalah biru tua
+  padding: 1.5rem; = Memberi ruang di dalam kartu sebesar 1.5rem (biasanya 24px).
+  border-radius: 8px; = Menambahkan bayangan agar kartu terlihat terangkat dari latar.
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); = bayangan hitam transparan (30%)
+  transition: transform 0.3s ease; = Memberi animasi halus saat properti transform berubah,Waktu transisi 0.3 detik.
+.project-card:hover { 
+  transform: translateY(-5px); = Saat kursor mengarah ke kartu (hover), kartu akan terangkat ke atas 5px.
+}
+
+footer {
+  text-align: center; = Semua teks di dalam footer akan diratakan ke tengah secara horizontal.
+  padding: 2rem; = 2 × ukuran font root, biasanya = 32px.
+  background-color: #1e293b; = Warna latar belakang dari kartu,yaitu warna biru gelap
+  font-size: 0.9rem; = Mengatur ukuran teks dalam footer menjadi sedikit lebih kecil dari ukuran normal.
+  color: #94a3b8; = 90% dari ukuran font dasar (biasanya sekitar 14.4px jika root-nya 16px).
+}
+
+<header>
+  <h1>Portofolio</h1> = adalah judul utama halaman.
+  <nav> = Tag semantik yang berfungsi sebagai wadah navigasi.
+    <a href="#about">Tentang</a> = berarti tautan menuju elemen lain di halaman yang memiliki id="about". Ketika diklik, halaman akan scroll otomatis ke bagian tersebut.
+    <a href="#projects">Proyek</a> = Menuju ke bagian dengan id projects.
+    <a href="#contact">Kontak</a> = Menuju ke bagian dengan id contact.
+  </nav>
+</header>
+
+<section class="hero"> = Elemen semantik HTML, digunakan untuk menandai satu bagian konten utama.
+  <h2>Perkenalkan Saya Muhammad Alfian Wirayudha</h2> = Judul bagian.Gunanya untuk menyambut pengunjung dengan memperkenalkan nama saya
+  <p>...</p> = Paragraf tambahan
+  <img src="foto.jpg" alt="Gambar saya" width="400" height="400"> = Menampilkan gambar profil kamu dan Mengatur ukuran gambar.
+</section>
+
+<section id="about"> = menandakan bagian konten yang berdiri sendiri.
+  <h3>Tentang Saya</h3> = digunakan karena ini adalah sub-judul dari halaman
+  <p>...</p> = Tempat untuk deskripsi singkat tentang saya.
+</section> 
+
+<section id="projects"> = menandai satu bagian konten.
+  <h3>Data Diri Dan Harapan Saya</h3> = 
+  <div class="projects"> = Judul dari bagian ini.
+    <div class="project-card">Blog Pribadi</div> = Container/wadah yang digunakan untuk menata isi (kartu).
+    <div class="project-card">Harapan Saya</div> = Setiap elemen ini adalah satu "kartu" yang berisi konten.
+    <div class="project-card">Sosial Media Saya</div> = Tiga konten dalam bentuk kartu
+  </div>
+</section>
+
+<footer id="contact"> = Elemen semantik HTML untuk bagian bawah halaman dan ini memungkinkan footer bisa diakses melalui navigasi
+  &copy; 2025 - Di buat oleh alfian ganteng = Ini adalah teks bebas yang menunjukkan pembuat halaman
+</footer> 
+
+
+
+

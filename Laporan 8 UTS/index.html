@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lu Meera Pizza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    
+    <nav class="fixed top-0 w-full z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                        Lu Meera Pizza
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-amber-400 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-amber-400 transition-colors">Tentang</a>
+                    <a href="#menu" class="text-gray-300 hover:text-amber-400 transition-colors">Menu</a>
+                    <a href="#gallery" class="text-gray-300 hover:text-amber-400 transition-colors">Gallery</a>
+                    <a href="#contact" class="text-gray-300 hover:text-amber-400 transition-colors">Kontak</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <button class="bg-gradient-to-r from-amber-500 to-amber-700 text-white px-6 py-2 rounded-full font-medium hover:from-amber-600 hover:to-amber-800 transition-all shadow-lg shadow-amber-500/25">
+                     Buka Jam
+                     13:00 siang sampai jam 23:00 malam 
+                    </button>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-amber-400">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#home" class="block text-gray-300 hover:text-amber-400 transition-colors">Home</a>
+                <a href="#about" class="block text-gray-300 hover:text-amber-400 transition-colors">About</a>
+                <a href="#menu" class="block text-gray-300 hover:text-amber-400 transition-colors">Menu</a>
+                <a href="#gallery" class="block text-gray-300 hover:text-amber-400 transition-colors">Gallery</a>
+                <a href="#contact" class="block text-gray-300 hover:text-amber-400 transition-colors">Contact</a>
+                <button class="w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white px-6 py-3 rounded-full font-medium hover:from-amber-600 hover:to-amber-800 transition-all">
+                    Reserve Table
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-20 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-gray-900 via-gray-800 to-amber-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                        <span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                            Segera Cobain
+                        </span>
+                        <br>
+                        <span class="text-white">Pizza Hanya 15k</span>
+                    </h1>
+                    <p class="text-gray-300 text-lg md:text-xl mb-8 leading-relaxed">
+                        Mulai sekarang semua orang berhak merasakan kebahagiaan dari sepotong pizza,tanpa harus membayar dengan sangat mahal, dan kenapa harus membeli pizza kami
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="bg-gradient-to-r from-amber-500 to-amber-700 text-white px-8 py-4 rounded-full font-semibold hover:from-amber-600 hover:to-amber-800 transition-all shadow-lg shadow-amber-500/25">
+                            Lihat Menu Kami
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="foto poster.jpg" class="w-full h-96 md:h-[500px] object-cover">
+                
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-amber-500/20 rounded-full blur-xl"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-amber-600/20 rounded-full blur-xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+            
+                <div class="text-center p-6 rounded-2xl bg-gray-700/50 hover:bg-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-utensils text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Topping keju yang melimpah</h3>
+                    <p class="text-gray-300">Walaupun hanya sekedar 15 ribu jangan salah kami menyediankan topping keju yang melimpah</p>
+                </div>
+
+                <div class="text-center p-6 rounded-2xl bg-gray-700/50 hover:bg-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cheese text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Saus rahasia racikan sendiri</h3>
+                    <p class="text-gray-300">Menggunakan saus racikan sendiri dengan sentuhan bumbu indonesia agar semakin nikmat</p>
+                </div>
+
+                <div class="text-center p-6 rounded-2xl bg-gray-700/50 hover:bg-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wine-glass-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Harga bersahabat,cuma 15k</h3>
+                    <p class="text-gray-300">Hanya dengan 15k kalian bisa menikmati makanan khas italia yang di luar sana sangatlah mahal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+               
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="foto2.jpg" 
+                             alt="Restaurant Interior" 
+                             class="w-full h-80 md:h-96 object-cover">
+                    </div>
+                </div>
+
+                
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        <span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                            Cerita Toko Ini
+                        </span>
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-6">
+                        menyajikan pizza lezat yang terjangkau untuk semua kalangan. Berawal dari dapur kecil di pinggiran kota, kini kami menjadi pilihan favorit masyarakat yang ingin menikmati cita rasa Italia tanpa harus merogoh kocek dalam-dalam.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-amber-500 mr-3"></i>
+                            <span class="text-gray-300">Harga mulai dari 15 ribu</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-amber-500 mr-3"></i>
+                            <span class="text-gray-300">Dikenal luas karena kualitas dan harga terjangkau</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check text-amber-500 mr-3"></i>
+                            <span class="text-gray-300">Bahan-bahan segar & halal setiap hari</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="flex justify-center">
+            <button class="bg-gradient-to-r from-amber-500 to-amber-700 text-white px-8 py-4 rounded-full font-semibold hover:from-amber-600 hover:to-amber-800 transition-all shadow-lg shadow-amber-500/25">
+                    View Full Menu
+                </button>
+          </section>
+
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      
+      <div class="bg-gray-800 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-lg">
+      
+        <div class="w-full h-40 rounded-xl overflow-hidden mb-4">
+          <img src="Foto menu 1.jpg" alt="Klasik Sapi Pizza" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Klasik Sapi Pizza</h3>
+        <p class="text-gray-300 mb-4">Dengan toping Daging Sapi, Sosis, dan Keju Cheddar. Bisa untuk 1-2 orang.</p>
+        <span class="text-amber-400 font-bold text-lg">Harga Rp.15.000</span>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-lg">
+        <div class="w-full h-40 rounded-xl overflow-hidden mb-4">
+          <img src="foto menu 3.jpg" alt="Daging Spesial" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Daging Spesial</h3>
+        <p class="text-gray-300 mb-4">Toping daging sapi, pepperoni, keju Melt, dan Mozarella. Untuk 2-3 orang.</p>
+        <span class="text-amber-400 font-bold text-lg">Harga Rp.40.000</span>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-lg">
+        <div class="w-full h-40 rounded-xl overflow-hidden mb-4">
+          <img src="foto menu 2.jpg" alt="Beef Mushroom" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Beef Mushroom</h3>
+        <p class="text-gray-300 mb-4">Toping daging sapi, jamur, dan Mozarella. Cocok untuk 2-3 orang.</p>
+        <span class="text-amber-400 font-bold text-lg">Harga Rp.40.000</span>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-lg">
+        <div class="w-full h-40 rounded-xl overflow-hidden mb-4">
+          <img src="foto menu 4.jpg" alt="Klasik Ayam" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Klasik Ayam</h3>
+        <p class="text-gray-300 mb-4">Toping daging ayam, sosis, dan keju cheddar.</p>
+        <span class="text-amber-400 font-bold text-lg">Harga Rp.15.000</span>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-lg">
+        <div class="w-full h-40 rounded-xl overflow-hidden mb-4">
+          <img src="foto menu 5.jpg" alt="Chicken Sausage" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Chicken Sausage</h3>
+        <p class="text-gray-300 mb-4">Toping Daging ayam, sosis, dan mozarella. Bisa untuk 3-4 orang.</p>
+        <span class="text-amber-400 font-bold text-lg">Harga Rp.30.000</span>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-lg">
+        <div class="w-full h-40 rounded-xl overflow-hidden mb-4">
+          <img src="foto menu 6.jpg" alt="Sausage Lovers" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Sausage Lovers</h3>
+        <p class="text-gray-300 mb-4">Toping daging sapi, sosis, dan Mozarella. Bisa untuk 3-4 orang.</p>
+        <span class="text-amber-400 font-bold text-lg">Harga Rp.30.000</span>
+      </div>
+
+      <div class="bg-gray-800 rounded-2xl p-6 hover:-translate-y-2 transition-all duration-300 shadow-lg">
+        <div class="w-full h-40 rounded-xl overflow-hidden mb-4">
+          <img src="foto menu 7.jpg" alt="Extra Pepperroni" class="w-full h-full object-cover">
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Extra Pepperroni</h3>
+        <p class="text-gray-300 mb-4">Toping daging sapi, pepperoni, Mozarella.</p>
+        <span class="text-amber-400 font-bold text-lg">Harga Rp.35.000</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section id="gallery" class="py-16 md:py-24 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        <span class="bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+          Gallery Toko Kami
+        </span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <div class="relative overflow-hidden rounded-xl group">
+        <img src="Foto 3.jpg"
+             alt="Pizza"
+             class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+          <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-xl group">
+        <img src="Foto 4.jpg"
+             alt="Pasta"
+             class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+          <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-xl group">
+        <img src="Foto 5.jpg"
+             alt="Dessert"
+             class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+          <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-xl group">
+        <img src="foto2.jpg"
+             alt="Restaurant"
+             class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+          <i class="fas fa-search-plus text-white text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+
+        <section id="contact" class="bg-gray-800 py-12 text-center">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-amber-400 mb-4">Pesan Sekarang</h2>
+    <p class="text-gray-300 mb-6 text-lg">
+      Kalau Anda mau pesan, silakan hubungi nomor di bawah ini:
+    </p>
+
+    <div class="flex justify-center flex-wrap gap-4">
+      <a href="https://wa.me/6285657081021" target="_blank" 
+        class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-colors"
+        aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp mr-2"></i> +62 85657081021
+      </a>
+
+        <a href="https://maps.app.goo.gl/ari18y9cs9jsyKkH8?g_st=ipc" target="_blank" 
+          class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-colors"
+          aria-label="Lokasi Google Maps">
+          <i class="fas fa-map-marker-alt mr-2"></i> Lokasi Kami
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+          </div>
+        </div>
+        </div>
+    </section>
+
+    </script>
+</body>
+</html>
+
+    
